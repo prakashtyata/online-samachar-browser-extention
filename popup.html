@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                width: 420px;
+                min-height: 250px;
+                background: #363636;
+            }
+            .os_news_list {
+                width: 95%;
+                margin: 0 auto;
+            }
+            .os_news_list .each_post {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin-bottom: 20px;
+                box-shadow: 0px 0px 13px 0px rgb(255 255 255 / 55%);
+                border-radius: 10px;
+                padding: 5px;
+                background: #fff;
+            }
+            .os_news_list .each_post .post_image {
+                flex-basis: 38%;
+            }
+            .os_news_list .each_post .post_details {
+                flex-basis: 58%;
+            }
+            .os_news_list .each_post .post_image img{
+                width: 100%;
+            }
+            .os_news_list .each_post .post_details a {
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: 600;
+                color: #000;
+            }
+            .spinner {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                border: 20px solid rgba(255, 255, 255, 0.1);
+                border-top-color: #09d;
+                animation: spin 1s linear infinite;
+                margin:0 auto;
+            }           
+
+            @keyframes spin {
+              to {
+                transform: rotate(360deg);
+              }
+            }
+
+            ::-webkit-scrollbar {
+                width: 7px;
+            }
+            ::-webkit-scrollbar-thumb {
+                background: #888;
+                border-radius: 5px;
+            }
+            ::-webkit-scrollbar-track {
+                background: #dedede;
+            }
+        </style>
+        <script src="jquery.min.js"></script>
+        <script src="popup.js"></script>
+    </head>
+    <body>
+        <div class="spinner"></div>
+		<div id="onlinesamachar"></div>
+    </body>
+</html>
